@@ -2,10 +2,13 @@ plugins {
     id 'org.springframework.boot'
 }
 
-archivesBaseName = 'kakameleoon-automation-api'
+archivesBaseName = 'javahack-matrix'
 
 dependencies {
     implementation project(":web")
+    implementation project(":rest")
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.1.5.RELEASE'
 }
