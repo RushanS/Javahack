@@ -1,0 +1,4 @@
+rootProject.name = 'javahack-project'
+
+include "web"
+include "main"

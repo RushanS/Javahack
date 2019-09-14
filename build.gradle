@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "3.6.1"
+    id 'org.springframework.boot' version '2.1.7.RELEASE' apply false
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+}
+
+allprojects {
+    group = 'com.raifeisen'
+    version = '0.0.1-SNAPSHOT'
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'java'
+    apply plugin: 'io.freefair.lombok'
+
+    generateLombokConfig.enabled = false
+
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.boot:spring-boot-dependencies:2.1.7.RELEASE"
+        }
+    }
+}

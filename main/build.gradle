@@ -1,0 +1,11 @@
+plugins {
+    id 'org.springframework.boot'
+}
+
+archivesBaseName = 'kakameleoon-automation-api'
+
+dependencies {
+    implementation project(":web")
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter'
+}
