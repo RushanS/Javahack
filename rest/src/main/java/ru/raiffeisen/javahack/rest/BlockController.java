@@ -4,13 +4,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-@RequestMapping("/test")
-public class TestController {
+import java.util.Arrays;
+import java.util.List;
 
-    @GetMapping
-    public String ping() {
-        return "Rushan";
-    }
+@RestController
+@RequestMapping("/api")
+public class BlockController {
+
+	@GetMapping
+	public List<String> ping() {
+		return Arrays.asList("Block1", "Blcok2");
+	}
 
 }
