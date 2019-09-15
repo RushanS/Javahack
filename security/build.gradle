@@ -1,5 +1,5 @@
 dependencies {
-    implementation project(':sme-logic')
+    implementation project(':builder-logic')
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-security'
 
     implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.1.7.RELEASE'

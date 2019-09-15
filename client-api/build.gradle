@@ -1,5 +1,5 @@
 dependencies {
-    implementation project(":sme-logic")
+    implementation project(":builder-logic")
     implementation group: 'org.springframework', name: 'spring-webmvc'
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'

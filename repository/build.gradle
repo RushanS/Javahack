@@ -1,5 +1,5 @@
 dependencies {
-    implementation project (":sme-logic")
+    implementation project (":builder-logic")
     implementation group: 'org.springframework', name: 'spring-context'
     testImplementation 'org.springframework.boot:spring-boot-starter-test:2.1.5.RELEASE'
 }
