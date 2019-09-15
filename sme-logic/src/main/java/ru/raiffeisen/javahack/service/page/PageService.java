@@ -27,6 +27,10 @@ public class PageService {
         return blockRepository.getAvailableBlocks();
     }
 
+    public Page getPageByCode(String code) {
+        return pageRepository.getByCode(code);
+    }
+
     public void createNewPage(Page page) {
         page.setCode(newPageCode());
         page.setStatus(PageStatus.DRAFT);
