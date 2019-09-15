@@ -59,7 +59,7 @@ public class PageService {
         Account account = loggedAccount.getCurrentLogged();
         Page page = pageRepository.getById(pageId);
         if (!Objects.equals(page.getOwner().getId(), account.getId())) {
-            throw new RuntimeException("Illegal access exception.");
+            throw new IllegalAccessToPageException();
         }
     }
 
