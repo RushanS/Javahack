@@ -2,8 +2,8 @@ rootProject.name = 'javahack-project'
 
 include "client-api"
 include "main"
-include "repository"
+include "repository-mock"
 include "security"
 include "sme-api"
 include "builder-logic"
-include "web"
+include "frontend"

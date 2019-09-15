@@ -5,14 +5,13 @@ plugins {
 archivesBaseName = 'javahack-matrix'
 
 dependencies {
-    implementation project(":web")
+    implementation project(":frontend")
     implementation project(":client-api")
-    implementation project(":repository")
+    implementation project(":repository-mock")
     implementation project(":security")
     implementation project(":sme-api")
     implementation project(":builder-logic")
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter'
-
     testImplementation 'org.springframework.boot:spring-boot-starter-test:2.1.5.RELEASE'
 }
