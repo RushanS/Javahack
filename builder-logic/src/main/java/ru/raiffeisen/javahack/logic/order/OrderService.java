@@ -2,7 +2,6 @@ package ru.raiffeisen.javahack.logic.order;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.raiffeisen.javahack.logic.account.LoggedAccount;
 import ru.raiffeisen.javahack.logic.notification.NotificationService;
 import ru.raiffeisen.javahack.logic.order.entity.Order;
 import ru.raiffeisen.javahack.logic.page.PageRepository;

@@ -18,6 +18,11 @@ public class SmeController {
 	private final PageService pageService;
 	private final OrderService orderService;
 
+	@GetMapping
+	public List<Page> getPages() {
+		return pageService.getPagesForCurrentAccount();
+	}
+
 	@PostMapping("/page")
 	public void createPage(@RequestBody Page page) {
 		pageService.createNewPage(page);
