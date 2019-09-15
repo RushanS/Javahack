@@ -9,7 +9,7 @@ import java.util.List;
 @Getter
 @Setter
 public class Order {
-    private Page pageInfo;
+    private Page page;
     private List<FieldValue> blocksData;
     private Client client;
 }
