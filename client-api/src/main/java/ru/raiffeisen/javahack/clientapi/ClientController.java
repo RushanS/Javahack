@@ -22,7 +22,12 @@ public class ClientController {
 	}
 
 	@PostMapping("/order")
-	public void makeOrder(@RequestBody Order order) {
+	public void makeOrder(@RequestBody OrderInputData orderInputData) {
+		Page page = pageService.getPageByCode(orderInputData.getPageCode());
+		Order order = new Order();
+		order.setPageInfo(page);
+		order.setBlocksData(orderInputData.getBlocksData());
+		order.setClient(orderInputData.getClient());
 		orderService.makeOrder(order);
 	}
 
