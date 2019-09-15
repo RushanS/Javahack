@@ -29,8 +29,18 @@ public class MockPageRepository implements PageRepository {
     }
 
     @Override
-    public void savePage(Page page) {
+    public void addPage(Page page) {
         // do nothing
+    }
+
+    @Override
+    public Page getById(Long id) {
+        return mockPage;
+    }
+
+    @Override
+    public void updatePage(Page page) {
+        mockPage = page;
     }
 
 }

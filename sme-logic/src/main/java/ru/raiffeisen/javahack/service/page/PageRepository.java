@@ -10,5 +10,6 @@ public interface PageRepository {
     Page getById(Long id);
     boolean existsByCode(String code);
     Page getByCode(String code);
-    void savePage(Page page);
+    void addPage(Page page);
+    void updatePage(Page page);
 }

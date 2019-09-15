@@ -6,6 +6,7 @@ import ru.raiffeisen.javahack.service.order.OrderService;
 import ru.raiffeisen.javahack.service.order.entity.Order;
 import ru.raiffeisen.javahack.service.page.PageService;
 import ru.raiffeisen.javahack.service.page.entity.Page;
+import ru.raiffeisen.javahack.service.page.entity.block.Block;
 
 import java.util.List;
 
@@ -14,19 +15,18 @@ import java.util.List;
 @RequestMapping("/api/sme")
 public class PageController {
 
-//	private final ClientService clientService;
-//
-//	@GetMapping("/{code}")
-//	public Page getPage(@PathVariable String code) {
-//		return clientService.getPageByCode(code);
-//	}
-
 	private final PageService pageService;
 	private final OrderService orderService;
 
 	@PostMapping("/page")
-	public void createPage(Page page) {
+	public void createPage(@RequestBody Page page) {
 		pageService.createNewPage(page);
+	}
+
+	@PutMapping("/page/{id}")
+	public void updatePage(@PathVariable Long pageId, @RequestBody Page page) {
+		page.setId(pageId);
+		pageService.updatePage(page);
 	}
 
 	@GetMapping("/order")
@@ -34,5 +34,9 @@ public class PageController {
 		return orderService.getOrdersByPage(pageId);
 	}
 
-	
+	@GetMapping("/block")
+	public List<Block> getBlocks() {
+		return pageService.getAavailableBlocks();
+	}
+
 }
