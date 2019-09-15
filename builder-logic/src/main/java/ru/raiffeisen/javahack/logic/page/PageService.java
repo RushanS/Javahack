@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.raiffeisen.javahack.logic.account.LoggedAccount;
 import ru.raiffeisen.javahack.logic.account.Account;
+import ru.raiffeisen.javahack.logic.integration.PublisherToExternalServices;
 import ru.raiffeisen.javahack.logic.page.entity.block.Block;
 import ru.raiffeisen.javahack.logic.page.entity.Page;
 import ru.raiffeisen.javahack.logic.page.entity.PageStatus;
@@ -18,6 +19,7 @@ public class PageService {
     private final PageRepository pageRepository;
     private final LoggedAccount loggedAccount;
     private final BlockRepository blockRepository;
+    private final PublisherToExternalServices publisherToExternalServices;
 
     public List<Page> getPagesForCurrentAccount() {
         Account account = loggedAccount.getCurrentLogged();
@@ -36,6 +38,7 @@ public class PageService {
         page.setCode(newPageCode());
         page.setStatus(PageStatus.DRAFT);
         pageRepository.addPage(page);
+        publisherToExternalServices.publicNewPageInfo(page);
     }
 
     private String newPageCode() {
@@ -49,6 +52,7 @@ public class PageService {
     public void updatePage(Page page) {
         checkAccessToPage(page.getId());
         pageRepository.updatePage(page);
+        publisherToExternalServices.updatePageInfo(page);
     }
 
     private void checkAccessToPage(Long pageId) {
