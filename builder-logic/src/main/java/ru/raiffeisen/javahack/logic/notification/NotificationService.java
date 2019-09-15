@@ -18,13 +18,15 @@ public class NotificationService {
 
     public void notifyAboutOrder(Order order) {
         String[] params = { order.getPage().getName() };
-        String content = messageSource.getMessage("notification.order", params, Locale.getDefault());
-        callAllProviders(order.getClient(), content);
+        String content = messageSource.getMessage("notification.order.content", params, Locale.getDefault());
+        String subject = messageSource.getMessage("notification.order.subject", null, Locale.getDefault());
+        callAllProviders(order.getClient(), subject, content);
     }
 
-    private void callAllProviders(Client client, String content) {
+    private void callAllProviders(Client client, String subject, String content) {
         for (NotificationProvider provider : notificationProviders) {
-            provider.sendNotification(client, content);
+            provider.sendNotification(client, subject, content);
         }
     }
+
 }

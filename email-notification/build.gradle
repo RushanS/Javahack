@@ -1,0 +1,6 @@
+dependencies {
+    implementation project (":builder-logic")
+    implementation group: 'org.springframework', name: 'spring-context'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-mail'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.1.5.RELEASE'
+}
