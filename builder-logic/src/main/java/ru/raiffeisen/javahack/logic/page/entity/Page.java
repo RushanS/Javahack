@@ -1,9 +1,9 @@
-package ru.raiffeisen.javahack.service.page.entity;
+package ru.raiffeisen.javahack.logic.page.entity;
 
 import lombok.Getter;
 import lombok.Setter;
-import ru.raiffeisen.javahack.service.account.Account;
-import ru.raiffeisen.javahack.service.page.entity.block.Block;
+import ru.raiffeisen.javahack.logic.account.Account;
+import ru.raiffeisen.javahack.logic.page.entity.block.Block;
 
 import java.util.List;
 

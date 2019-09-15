@@ -5,8 +5,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
-import ru.raiffeisen.javahack.service.account.Account;
-import ru.raiffeisen.javahack.service.account.AccountRepository;
+import ru.raiffeisen.javahack.logic.account.Account;
+import ru.raiffeisen.javahack.logic.account.AccountRepository;
 
 @RequiredArgsConstructor
 @Component

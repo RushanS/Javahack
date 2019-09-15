@@ -1,11 +1,11 @@
-package ru.raiffeisen.javahack.service.order;
+package ru.raiffeisen.javahack.logic.order;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.raiffeisen.javahack.service.account.LoggedAccount;
-import ru.raiffeisen.javahack.service.order.entity.Order;
-import ru.raiffeisen.javahack.service.page.PageRepository;
-import ru.raiffeisen.javahack.service.page.entity.Page;
+import ru.raiffeisen.javahack.logic.account.LoggedAccount;
+import ru.raiffeisen.javahack.logic.order.entity.Order;
+import ru.raiffeisen.javahack.logic.page.PageRepository;
+import ru.raiffeisen.javahack.logic.page.entity.Page;
 
 import java.util.List;
 

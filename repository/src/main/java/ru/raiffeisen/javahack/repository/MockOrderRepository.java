@@ -1,9 +1,9 @@
 package ru.raiffeisen.javahack.repository;
 
 import org.springframework.stereotype.Repository;
-import ru.raiffeisen.javahack.service.order.OrderRepository;
-import ru.raiffeisen.javahack.service.order.entity.Order;
-import ru.raiffeisen.javahack.service.page.entity.Page;
+import ru.raiffeisen.javahack.logic.order.OrderRepository;
+import ru.raiffeisen.javahack.logic.order.entity.Order;
+import ru.raiffeisen.javahack.logic.page.entity.Page;
 
 import java.util.Collections;
 import java.util.List;

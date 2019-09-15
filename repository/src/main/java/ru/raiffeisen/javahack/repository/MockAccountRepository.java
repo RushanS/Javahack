@@ -1,8 +1,8 @@
 package ru.raiffeisen.javahack.repository;
 
 import org.springframework.stereotype.Repository;
-import ru.raiffeisen.javahack.service.account.Account;
-import ru.raiffeisen.javahack.service.account.AccountRepository;
+import ru.raiffeisen.javahack.logic.account.Account;
+import ru.raiffeisen.javahack.logic.account.AccountRepository;
 
 @Repository
 public class MockAccountRepository implements AccountRepository {

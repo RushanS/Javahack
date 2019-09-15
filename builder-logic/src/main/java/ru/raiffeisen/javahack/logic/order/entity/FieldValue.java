@@ -1,4 +1,4 @@
-package ru.raiffeisen.javahack.service.order.entity;
+package ru.raiffeisen.javahack.logic.order.entity;
 
 import lombok.Getter;
 import lombok.Setter;

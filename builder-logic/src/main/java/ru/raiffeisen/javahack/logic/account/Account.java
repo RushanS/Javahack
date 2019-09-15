@@ -1,4 +1,4 @@
-package ru.raiffeisen.javahack.service.account;
+package ru.raiffeisen.javahack.logic.account;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package ru.raiffeisen.javahack.service.account;
+package ru.raiffeisen.javahack.logic.account;
 
 public interface AccountRepository {
     Account getByUserName(String username);

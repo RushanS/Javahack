@@ -2,11 +2,11 @@ package ru.raiffeisen.javahack.smeapi;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import ru.raiffeisen.javahack.service.order.OrderService;
-import ru.raiffeisen.javahack.service.order.entity.Order;
-import ru.raiffeisen.javahack.service.page.PageService;
-import ru.raiffeisen.javahack.service.page.entity.Page;
-import ru.raiffeisen.javahack.service.page.entity.block.Block;
+import ru.raiffeisen.javahack.logic.order.OrderService;
+import ru.raiffeisen.javahack.logic.order.entity.Order;
+import ru.raiffeisen.javahack.logic.page.PageService;
+import ru.raiffeisen.javahack.logic.page.entity.Page;
+import ru.raiffeisen.javahack.logic.page.entity.block.Block;
 
 import java.util.List;
 

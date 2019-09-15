@@ -1,9 +1,9 @@
 package ru.raiffeisen.javahack.repository;
 
 import org.springframework.stereotype.Repository;
-import ru.raiffeisen.javahack.service.account.Account;
-import ru.raiffeisen.javahack.service.page.PageRepository;
-import ru.raiffeisen.javahack.service.page.entity.Page;
+import ru.raiffeisen.javahack.logic.account.Account;
+import ru.raiffeisen.javahack.logic.page.PageRepository;
+import ru.raiffeisen.javahack.logic.page.entity.Page;
 
 import java.util.Collections;
 import java.util.List;

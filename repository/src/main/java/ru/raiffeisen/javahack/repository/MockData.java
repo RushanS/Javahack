@@ -1,10 +1,10 @@
 package ru.raiffeisen.javahack.repository;
 
-import ru.raiffeisen.javahack.service.account.Account;
-import ru.raiffeisen.javahack.service.page.CodeUtil;
-import ru.raiffeisen.javahack.service.page.entity.Page;
-import ru.raiffeisen.javahack.service.page.entity.PageStatus;
-import ru.raiffeisen.javahack.service.page.entity.block.*;
+import ru.raiffeisen.javahack.logic.account.Account;
+import ru.raiffeisen.javahack.logic.page.CodeUtil;
+import ru.raiffeisen.javahack.logic.page.entity.Page;
+import ru.raiffeisen.javahack.logic.page.entity.PageStatus;
+import ru.raiffeisen.javahack.logic.page.entity.block.*;
 
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;

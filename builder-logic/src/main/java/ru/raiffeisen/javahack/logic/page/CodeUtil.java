@@ -1,4 +1,4 @@
-package ru.raiffeisen.javahack.service.page;
+package ru.raiffeisen.javahack.logic.page;
 
 import java.util.Random;
 

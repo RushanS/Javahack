@@ -1,8 +1,8 @@
 package ru.raiffeisen.javahack.repository;
 
 import org.springframework.stereotype.Repository;
-import ru.raiffeisen.javahack.service.page.BlockRepository;
-import ru.raiffeisen.javahack.service.page.entity.block.Block;
+import ru.raiffeisen.javahack.logic.page.BlockRepository;
+import ru.raiffeisen.javahack.logic.page.entity.block.Block;
 
 import java.util.List;
 

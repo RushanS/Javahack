@@ -2,7 +2,7 @@ package ru.raiffeisen.javahack.security;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import ru.raiffeisen.javahack.service.account.Account;
+import ru.raiffeisen.javahack.logic.account.Account;
 
 import java.util.Collection;
 import java.util.Collections;

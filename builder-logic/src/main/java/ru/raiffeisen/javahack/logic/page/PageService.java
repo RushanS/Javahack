@@ -1,12 +1,12 @@
-package ru.raiffeisen.javahack.service.page;
+package ru.raiffeisen.javahack.logic.page;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.raiffeisen.javahack.service.account.LoggedAccount;
-import ru.raiffeisen.javahack.service.account.Account;
-import ru.raiffeisen.javahack.service.page.entity.block.Block;
-import ru.raiffeisen.javahack.service.page.entity.Page;
-import ru.raiffeisen.javahack.service.page.entity.PageStatus;
+import ru.raiffeisen.javahack.logic.account.LoggedAccount;
+import ru.raiffeisen.javahack.logic.account.Account;
+import ru.raiffeisen.javahack.logic.page.entity.block.Block;
+import ru.raiffeisen.javahack.logic.page.entity.Page;
+import ru.raiffeisen.javahack.logic.page.entity.PageStatus;
 
 import java.util.List;
 import java.util.Objects;

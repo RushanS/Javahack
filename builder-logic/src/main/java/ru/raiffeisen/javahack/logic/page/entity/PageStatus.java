@@ -1,4 +1,4 @@
-package ru.raiffeisen.javahack.service.page.entity;
+package ru.raiffeisen.javahack.logic.page.entity;
 
 public enum PageStatus {
     ACTIVE,

@@ -1,4 +1,4 @@
-package ru.raiffeisen.javahack.service.order.entity;
+package ru.raiffeisen.javahack.logic.order.entity;
 
 public enum FieldType {
     STRING,

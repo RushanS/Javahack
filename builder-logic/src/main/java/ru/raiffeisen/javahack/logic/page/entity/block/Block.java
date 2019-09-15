@@ -1,9 +1,7 @@
-package ru.raiffeisen.javahack.service.page.entity.block;
+package ru.raiffeisen.javahack.logic.page.entity.block;
 
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.List;
 
 @Getter
 @Setter
