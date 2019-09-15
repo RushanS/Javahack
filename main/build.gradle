@@ -6,7 +6,9 @@ archivesBaseName = 'javahack-matrix'
 
 dependencies {
     implementation project(":web")
-    implementation project(":rest")
+    implementation project(":client-api")
+    implementation project(":repository")
+    implementation project(":sme-logic")
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter'
 

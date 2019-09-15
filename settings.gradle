@@ -1,8 +1,8 @@
 rootProject.name = 'javahack-project'
 
-include "client-logic"
+include "client-api"
 include "main"
-include "persistence"
+include "repository"
 include "rest"
 include "sme-logic"
 include "web"
