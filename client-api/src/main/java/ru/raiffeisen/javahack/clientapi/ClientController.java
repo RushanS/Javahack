@@ -16,8 +16,9 @@ public class ClientController {
 	private final OrderService orderService;
 
 	@GetMapping("/page/{code}")
-	public Page getPage(@PathVariable String code) {
-		return pageService.getPageByCode(code);
+	public PageData getPage(@PathVariable String code) {
+        Page page = pageService.getPageByCode(code);
+        return new PageData(page);
 	}
 
 	@PostMapping("/order")
