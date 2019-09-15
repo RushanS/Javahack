@@ -3,8 +3,6 @@ package ru.raiffeisen.javahack.repository;
 import org.springframework.stereotype.Repository;
 import ru.raiffeisen.javahack.service.page.BlockRepository;
 import ru.raiffeisen.javahack.service.page.entity.block.Block;
-import ru.raiffeisen.javahack.service.page.entity.Field;
-import ru.raiffeisen.javahack.service.page.entity.FieldType;
 
 import java.util.List;
 
