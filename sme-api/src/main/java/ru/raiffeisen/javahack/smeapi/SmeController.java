@@ -1,4 +1,4 @@
-package ru.raiffeisen.javahack.clientapi;
+package ru.raiffeisen.javahack.smeapi;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +13,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/sme")
-public class PageController {
+public class SmeController {
 
 	private final PageService pageService;
 	private final OrderService orderService;

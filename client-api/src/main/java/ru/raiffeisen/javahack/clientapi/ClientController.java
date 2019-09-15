@@ -11,7 +11,7 @@ import ru.raiffeisen.javahack.service.page.entity.Page;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/client")
-public class PageController {
+public class ClientController {
 
 	private final PageService pageService;
 

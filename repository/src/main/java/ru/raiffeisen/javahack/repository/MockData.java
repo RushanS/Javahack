@@ -1,5 +1,6 @@
 package ru.raiffeisen.javahack.repository;
 
+import ru.raiffeisen.javahack.service.account.Account;
 import ru.raiffeisen.javahack.service.page.CodeUtil;
 import ru.raiffeisen.javahack.service.page.entity.Page;
 import ru.raiffeisen.javahack.service.page.entity.PageStatus;
@@ -22,6 +23,7 @@ public class MockData {
         page.setCode(CodeUtil.generateRandomPageCode());
         page.setStatus(PageStatus.ACTIVE);
         page.setBlocks(mockBlocks());
+        page.setOwner(mockAccount());
         return page;
     }
 
@@ -118,6 +120,14 @@ public class MockData {
                 DayOfWeek.SATURDAY,
                 DayOfWeek.SUNDAY
         );
+    }
+
+    public Account mockAccount() {
+        Account account = new Account();
+        account.setId(idSequence++);
+        account.setName("Vilgud");
+        account.setEncryptedPassword("1234");
+        return account;
     }
 
 }

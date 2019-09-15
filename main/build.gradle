@@ -8,6 +8,8 @@ dependencies {
     implementation project(":web")
     implementation project(":client-api")
     implementation project(":repository")
+    implementation project(":security")
+    implementation project(":sme-api")
     implementation project(":sme-logic")
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter'
